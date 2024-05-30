@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.uptctrabajocampo.ecoclickv2.exception.MessageRest;
 import com.uptctrabajocampo.ecoclickv2.recycler.application.RecyclerService;
 import com.uptctrabajocampo.ecoclickv2.recycler.domain.Recycler;
 
@@ -31,17 +32,17 @@ public class RecyclerController {
     }
 
     @GetMapping("/findAll")
-    public ResponseEntity<List<Recycler>> getAllRecyclers() {
+    public ResponseEntity<MessageRest<List<Recycler>>> getAllRecyclers() {
         return recyclerService.getAllRecycler();
     }
 
     @PostMapping("/create")
-    public ResponseEntity<Void> createRecycler(@RequestBody Recycler recycler) {
+    public ResponseEntity<MessageRest<Recycler>> createRecycler(@RequestBody Recycler recycler) {
         return recyclerService.createRecycler(recycler);
     }
 
     @PostMapping("/create/allParams")
-    public ResponseEntity<Void> createRecycler(
+    public ResponseEntity<MessageRest<Recycler>> createRecycler(
             @RequestParam String firstName,
             @RequestParam String lastName,
             @RequestParam String documentType,
@@ -55,52 +56,52 @@ public class RecyclerController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<Void> updateRecycler(@RequestBody Recycler recycler) {
+    public ResponseEntity<MessageRest<Void>> updateRecycler(@RequestBody Recycler recycler) {
         return recyclerService.updateRecycler(recycler);
     }
 
     @PatchMapping("/update/environmentalLicense")
-    public ResponseEntity<Void> updateRecyclerEnvironmentalLicense(@RequestParam int recyclerId, @RequestParam String environmentalLicense) {
+    public ResponseEntity<MessageRest<Void>> updateRecyclerEnvironmentalLicense(@RequestParam int recyclerId, @RequestParam String environmentalLicense) {
         return recyclerService.updateRecyclerEnvironmentalLicense(recyclerId, environmentalLicense);
     }
 
     @PatchMapping("/update/email")
-    public ResponseEntity<Void> updateRecyclerEmail(@RequestParam int recyclerId, @RequestParam String email) {
+    public ResponseEntity<MessageRest<Void>> updateRecyclerEmail(@RequestParam int recyclerId, @RequestParam String email) {
         return recyclerService.updateRecyclerEmail(recyclerId, email);
     }
 
     @PatchMapping("/update/contactNumber")
-    public ResponseEntity<Void> updateRecyclerContactNumber(@RequestParam int recyclerId, @RequestParam String contactNumber) {
+    public ResponseEntity<MessageRest<Void>> updateRecyclerContactNumber(@RequestParam int recyclerId, @RequestParam String contactNumber) {
         return recyclerService.updateRecyclerContactNumber(recyclerId, contactNumber);
     }
 
     @PatchMapping("/update/alternativeNumber")
-    public ResponseEntity<Void> updateRecyclerAlternativeNumber(@RequestParam int recyclerId, @RequestParam String alternativeNumber) {
+    public ResponseEntity<MessageRest<Void>> updateRecyclerAlternativeNumber(@RequestParam int recyclerId, @RequestParam String alternativeNumber) {
         return recyclerService.updateRecyclerAlternativeNumber(recyclerId, alternativeNumber);
     }
 
     @PatchMapping("/update/alternativeEmail")
-    public ResponseEntity<Void> updateRecyclerAlternativeEmail(@RequestParam int recyclerId, @RequestParam String alternativeEmail) {
+    public ResponseEntity<MessageRest<Void>> updateRecyclerAlternativeEmail(@RequestParam int recyclerId, @RequestParam String alternativeEmail) {
         return recyclerService.updateRecyclerAlternativeEmail(recyclerId, alternativeEmail);
     }
 
     @GetMapping("/findByEnvironmentalLicense")
-    public ResponseEntity<Recycler> getRecyclerByEnvironmentalLicense(@RequestParam String environmentalLicense) {
+    public  ResponseEntity<MessageRest<Recycler>> getRecyclerByEnvironmentalLicense(@RequestParam String environmentalLicense) {
         return recyclerService.getRecyclerByEnvironmentalLicense(environmentalLicense);
     }
 
     @GetMapping("/findById")
-    public ResponseEntity<Recycler> getRecyclerById(@RequestParam int recyclerId) {
+    public  ResponseEntity<MessageRest<Recycler>> getRecyclerById(@RequestParam int recyclerId) {
         return recyclerService.getRecyclerById(recyclerId);
     }
 
     @GetMapping("/findByDocumentNumber")
-    public ResponseEntity<Recycler> getRecyclerByDocumentNumber(@RequestParam String documentNumber) {
+    public  ResponseEntity<MessageRest<Recycler>> getRecyclerByDocumentNumber(@RequestParam String documentNumber) {
         return recyclerService.getRecyclerByDocumentNumber(documentNumber);
     }
 
     @GetMapping("/findByEmail")
-    public ResponseEntity<Recycler> getRecyclerByEmail(@RequestParam String email) {
+    public  ResponseEntity<MessageRest<Recycler>> getRecyclerByEmail(@RequestParam String email) {
         return recyclerService.getRecyclerByemail(email);
     }
 }
