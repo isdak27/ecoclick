@@ -11,8 +11,8 @@ public interface DeliveryPort {
   Delivery createDelivery(Delivery delivery);
   void updateDelivery(Delivery delivery);
   void updateDeliverystatus(int deliveryId,String status);
-  void updateDeliveryAddress(int deliveryId,int rating);
-  void updateDeliveryfeedback(String feedback);
+  void updateDeliveryRating(int deliveryId,int rating);
+  void updateDeliveryfeedback(int deliveryId,String feedback);
   Delivery getDeliveryRues(String rues);
   Delivery getDeliveryById(int deliveryId);
   Delivery getDeliveryByfeedback(String feedback);

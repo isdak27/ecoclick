@@ -1,10 +1,15 @@
-package com.uptctrabajocampo.ecoclickv2.request.domain;
+package com.uptctrabajocampo.ecoclickv2.request.application;
 
 import java.util.List;
 
-public interface MaterialPort {
-  List<Material> getAllMaterial();
-  List<Material> getAllMaterialByMaterialType(String materialType);
+import org.springframework.http.ResponseEntity;
+
+import com.uptctrabajocampo.ecoclickv2.exception.MessageRest;
+import com.uptctrabajocampo.ecoclickv2.request.domain.Material;
+
+public interface MaterialRestPort {
+  ResponseEntity<MessageRest<List<Material>>> getAllMaterial();
+  ResponseEntity<MessageRest<List<Material>>> getAllMaterialByMaterialType(String materialType);
   Material createMaterial(Material material);
   void updateMaterial(Material material);
   void updateMaterialName(int materialId,String materialName);

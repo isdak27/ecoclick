@@ -12,7 +12,7 @@ public interface StopPort {
   List<Stop> getAllStopByDate(Date executionDate);
   List<Stop> getAllStopByStatus(String status);
   List<Stop> getAllStopByAssociatedJourney(Journey associatedJourney);
-  List<Stop> getAllStopByAssociatedJourney(Request associatedRequest);
+  List<Stop> getAllStopByAssociatedRequest(Request associatedRequest);
   Stop createStop(Stop stop);
   void updateStop(Stop stop);
   void updateStopStatus(int stopId,String status);
