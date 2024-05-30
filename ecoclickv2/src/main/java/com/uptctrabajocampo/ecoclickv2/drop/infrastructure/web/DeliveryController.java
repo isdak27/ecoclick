@@ -71,11 +71,6 @@ public class DeliveryController {
         return deliveryService.updateDeliveryfeedback(deliveryId, feedback);
     }
 
-    @GetMapping("/findByRues")
-    public ResponseEntity<MessageRest<Delivery>> getDeliveryByRues(@RequestParam String rues) {
-        return deliveryService.getDeliveryRues(rues);
-    }
-
     @GetMapping("/findById")
     public ResponseEntity<MessageRest<Delivery>> getDeliveryById(@RequestParam int deliveryId) {
         return deliveryService.getDeliveryById(deliveryId);
@@ -86,13 +81,4 @@ public class DeliveryController {
         return deliveryService.getDeliveryByfeedback(feedback);
     }
 
-    @GetMapping("/findByEnvironmentalLicense")
-    public ResponseEntity<MessageRest<Delivery>> getDeliveryByEnvironmentalLicense(@RequestParam String environmentalLicense) {
-        return deliveryService.getDeliveryByEnvironmentalLicense(environmentalLicense);
-    }
-
-    @GetMapping("/findByBusinessName")
-    public ResponseEntity<MessageRest<Delivery>> getDeliveryByBusinessName(@RequestParam String businessName) {
-        return deliveryService.getDeliveryByBusinessName(businessName);
-    }
 }

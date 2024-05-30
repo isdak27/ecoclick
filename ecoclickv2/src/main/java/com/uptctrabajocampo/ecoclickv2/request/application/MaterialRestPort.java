@@ -10,15 +10,15 @@ import com.uptctrabajocampo.ecoclickv2.request.domain.Material;
 public interface MaterialRestPort {
   ResponseEntity<MessageRest<List<Material>>> getAllMaterial();
   ResponseEntity<MessageRest<List<Material>>> getAllMaterialByMaterialType(String materialType);
-  Material createMaterial(Material material);
-  void updateMaterial(Material material);
-  void updateMaterialName(int materialId,String materialName);
-  void updateMaterialType(int materialId,String materialType);
-  void updateMaterialAddress(int materialId,int rating);
-  void updateMaterialCollectionProcedure(int materialId,String collectionProcedure);
-  void updateMaterialTreatmentInstruction(int materialId,String treatmentInstruction);
-  void updateMaterialRecommendation(int materialId,String recommendation);
-  void updateMaterialReferenceImage(int materialId,String referenceImage);
-  Material getMaterialById(int materialId);
-  Material getMaterialByName(String materialName);
+  ResponseEntity<MessageRest<Material>> createMaterial(Material material);
+  ResponseEntity<MessageRest<Void>> updateMaterial(Material material);
+  ResponseEntity<MessageRest<Void>> updateMaterialName(int materialId,String materialName);
+  ResponseEntity<MessageRest<Void>> updateMaterialType(int materialId,String materialType);
+  ResponseEntity<MessageRest<Void>> updateMaterialAddress(int materialId,int rating);
+  ResponseEntity<MessageRest<Void>> updateMaterialCollectionProcedure(int materialId,String collectionProcedure);
+  ResponseEntity<MessageRest<Void>> updateMaterialTreatmentInstruction(int materialId,String treatmentInstruction);
+  ResponseEntity<MessageRest<Void>> updateMaterialRecommendation(int materialId,String recommendation);
+  ResponseEntity<MessageRest<Void>> updateMaterialReferenceImage(int materialId,String referenceImage);
+  ResponseEntity<MessageRest<Material>> getMaterialById(int materialId);
+  ResponseEntity<MessageRest<Material>> getMaterialByName(String materialName);
 }

@@ -2,7 +2,7 @@ package com.uptctrabajocampo.ecoclickv2.drop.infrastructure.persistence;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -15,5 +15,4 @@ public interface StopRepository extends JpaRepository<Stop, Integer> {
     List<Stop> findAllByStatus(String status);
     List<Stop> findAllByAssociatedJourney(Journey associatedJourney);
     List<Stop> findAllByAssociatedRequest(Request associatedRequest);
-    Optional<Stop> findByRues(String rues);
 }

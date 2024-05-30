@@ -9,7 +9,7 @@ import com.uptctrabajocampo.ecoclickv2.location.domain.Location;
 import com.uptctrabajocampo.ecoclickv2.route.domain.Route;
 import com.uptctrabajocampo.ecoclickv2.route.domain.RouteLocation;
 
-public interface RouteLocationPort {
+public interface RouteLocationRestPort {
     ResponseEntity<MessageRest<List<RouteLocation>>> getAllRoutesLocation();
     ResponseEntity<MessageRest<List<RouteLocation>>> getAllRoutesLocationByLocation(Location location);
     ResponseEntity<MessageRest<List<RouteLocation>>> getAllRoutesLocationByRoute(Route route);

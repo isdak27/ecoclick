@@ -95,14 +95,4 @@ public class StopRepositoryAdapter implements StopPort {
             throw new ObjectNotFoundException("Stop with id " + stopId + " not found");
         }
     }
-
-    @Override
-    public Stop getOrganizationRues(String rues) {
-        return stopRepository.findByRues(rues).orElse(null);
-    }
-
-    @Override
-    public Stop getOrganizationById(int stopId) {
-        return stopRepository.findById(stopId).orElse(null);
-    }
 }

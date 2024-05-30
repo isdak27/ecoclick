@@ -17,9 +17,6 @@ public interface DeliveryRestPort {
   ResponseEntity<MessageRest<Void>> updateDeliverystatus(int deliveryId,String status);
   ResponseEntity<MessageRest<Void>> updateDeliveryAddress(int deliveryId,int rating);
   ResponseEntity<MessageRest<Void>> updateDeliveryfeedback(int deliveryId,String feedback);
-  ResponseEntity<MessageRest<Delivery>> getDeliveryRues(String rues);
   ResponseEntity<MessageRest<Delivery>> getDeliveryById(int deliveryId);
   ResponseEntity<MessageRest<Delivery>> getDeliveryByfeedback(String feedback);
-  ResponseEntity<MessageRest<Delivery>> getDeliveryByEnvironmentalLicense(String feedback);
-  ResponseEntity<MessageRest<Delivery>> getDeliveryByBusinessName(String businessName);
 }

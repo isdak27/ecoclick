@@ -105,13 +105,8 @@ public class StopService implements StopRestPort {
             return new ResponseEntity<>(new MessageRest<>(0, "Invalid Data", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
         }
         try {
-            Stop existingStop = stopPort.getOrganizationById(stop.getStopId());
-            if (existingStop != null) {
                 stopPort.updateStop(stop);
                 return new ResponseEntity<>(new MessageRest<>(1, "Stop Updated", HttpStatus.NO_CONTENT.value(), null), HttpStatus.NO_CONTENT);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Stop Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
         } catch (Exception e) {
             return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -123,13 +118,9 @@ public class StopService implements StopRestPort {
             return new ResponseEntity<>(new MessageRest<>(0, "Invalid Data", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
         }
         try {
-            Stop existingStop = stopPort.getOrganizationById(stopId);
-            if (existingStop != null) {
                 stopPort.updateStopStatus(stopId, status);
                 return new ResponseEntity<>(new MessageRest<>(1, "Stop Status Updated", HttpStatus.NO_CONTENT.value(), null), HttpStatus.NO_CONTENT);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Stop Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
+            
         } catch (Exception e) {
             return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -141,13 +132,8 @@ public class StopService implements StopRestPort {
             return new ResponseEntity<>(new MessageRest<>(0, "Invalid Data", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
         }
         try {
-            Stop existingStop = stopPort.getOrganizationById(stopId);
-            if (existingStop != null) {
                 stopPort.updateStopRating(stopId, rating);
-                return new ResponseEntity<>(new MessageRest<>(1, "Stop Rating Updated", HttpStatus.NO_CONTENT.value(), null), HttpStatus.NO_CONTENT);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Stop Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
+                return new ResponseEntity<>(new MessageRest<>(1, "Stop Rating Updated", HttpStatus.NO_CONTENT.value(), null), HttpStatus.NO_CONTENT);          
         } catch (Exception e) {
             return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -159,49 +145,11 @@ public class StopService implements StopRestPort {
             return new ResponseEntity<>(new MessageRest<>(0, "Invalid Data", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
         }
         try {
-            Stop existingStop = stopPort.getOrganizationById(stopId);
-            if (existingStop != null) {
                 stopPort.updateStopDetails(stopId, stopDetails);
                 return new ResponseEntity<>(new MessageRest<>(1, "Stop Details Updated", HttpStatus.NO_CONTENT.value(), null), HttpStatus.NO_CONTENT);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Stop Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
         } catch (Exception e) {
             return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-    @Override
-    public ResponseEntity<MessageRest<Stop>> getOrganizationRues(String rues) {
-        if (rues == null || rues.isEmpty()) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Invalid RUES", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
-        }
-        try {
-            Stop stop = stopPort.getOrganizationRues(rues);
-            if (stop != null) {
-                return new ResponseEntity<>(new MessageRest<>(1, "Success", HttpStatus.OK.value(), stop), HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Stop Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
-        } catch (Exception e) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    @Override
-    public ResponseEntity<MessageRest<Stop>> getOrganizationById(int stopId) {
-        if (stopId <= 0) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Invalid Stop ID", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
-        }
-        try {
-            Stop stop = stopPort.getOrganizationById(stopId);
-            if (stop != null) {
-                return new ResponseEntity<>(new MessageRest<>(1, "Success", HttpStatus.OK.value(), stop), HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Stop Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
-        } catch (Exception e) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
 }

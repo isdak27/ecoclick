@@ -82,14 +82,4 @@ public class StopController {
     public ResponseEntity<MessageRest<Void>> updateStopDetails(@RequestParam int stopId, @RequestParam String stopDetails) {
         return stopService.updateStopDetails(stopId, stopDetails);
     }
-
-    @GetMapping("/findByRues")
-    public ResponseEntity<MessageRest<Stop>> getStopByRues(@RequestParam String rues) {
-        return stopService.getOrganizationRues(rues);
-    }
-
-    @GetMapping("/findById")
-    public ResponseEntity<MessageRest<Stop>> getStopById(@RequestParam int stopId) {
-        return stopService.getOrganizationById(stopId);
-    }
 }

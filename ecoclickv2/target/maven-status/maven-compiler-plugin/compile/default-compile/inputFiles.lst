@@ -1,47 +1,89 @@
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\application\ClientService.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\exception\GlobalExceptionHandler.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\domain\Recycler.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\application\ClientRestPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\infrastructure\persistence\OrganizationRepository.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\infrastructure\persistence\RecyclerRepositoryAdapter.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\infrastructure\persistence\OrganizationRepositoryAdapter.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\application\RecyclerRestPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\RouteLocation.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\infrastructure\persistence\ClientRepository.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\Stop.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\Delivery.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\StopPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\infrastructure\persistence\LocationRepositoryAdapter.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\MaterialPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\Material.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\domain\Client.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\domain\LocationPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\infrastructure\web\ClientController.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\infrastructure\web\LocationController.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\application\OrganizationService.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\RequestPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\domain\ClientPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\Ecoclickv2Application.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\domain\Location.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\infrastructure\web\OrganizationController.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\Load.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\domain\OrganizationPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\application\LocationRestPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\exception\ObjectNotFoundException.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\application\RecyclerService.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\domain\RecyclerPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\JourneyPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\exception\MessageRest.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\Journey.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\application\OrganizationRestPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\Route.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\application\LocationService.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\infrastructure\persistence\RecyclerRepository.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\infrastructure\web\RecyclerController.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\Request.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\DeliveryPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\infrastructure\persistence\LocationRepository.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\LoadPort.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\infrastructure\persistence\ClientRepositoryAdapter.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\domain\Organization.java
-C:\Users\USER\Documents\GitHub\ecoclick\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\config\SecurityConfig.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\Request.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\Ecoclickv2Application.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\application\DeliveryService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\persistence\LoadRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\infrastructure\web\ClientController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\exception\GlobalExceptionHandler.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\infrastructure\persistence\StopRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\application\LoadService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\application\ClientService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\Delivery.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\application\LocationRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\domain\Recycler.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\application\JourneyRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\RoutePort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\infrastructure\persistence\LocationRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\persistence\RouteLocationRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\persistence\MaterialRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\StopPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\infrastructure\web\StopController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\Stop.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\Load.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\web\JourneyController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\web\RequestController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\application\RouteLocationRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\persistence\RouteLocationRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\application\OrganizationService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\infrastructure\persistence\OrganizationRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\infrastructure\web\OrganizationController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\infrastructure\persistence\OrganizationRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\infrastructure\web\RecyclerController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\application\RequestRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\domain\ClientPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\application\JourneyService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\persistence\RouteRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\Journey.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\application\LoadRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\RouteLocation.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\JourneyPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\web\RouteController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\application\StopRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\infrastructure\web\DeliveryController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\domain\OrganizationPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\persistence\LoadRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\Route.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\config\SecurityConfig.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\web\MaterialController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\domain\LocationPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\application\MaterialService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\RequestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\application\RouteService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\application\RecyclerService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\persistence\MaterialRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\application\MaterialRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\domain\RouteLocationPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\application\OrganizationRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\infrastructure\persistence\StopRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\application\LocationService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\persistence\JourneyRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\infrastructure\persistence\LocationRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\Material.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\organization\domain\Organization.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\MaterialPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\domain\DeliveryPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\web\LoadController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\application\RequestService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\infrastructure\persistence\ClientRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\domain\Client.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\web\RouteLocationController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\application\DeliveryRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\persistence\JourneyRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\domain\RecyclerPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\infrastructure\persistence\RecyclerRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\persistence\RequestRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\application\StopService.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\exception\ObjectNotFoundException.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\infrastructure\persistence\RequestRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\infrastructure\web\LocationController.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\infrastructure\persistence\RecyclerRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\request\domain\LoadPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\infrastructure\persistence\DeliveryRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\exception\MessageRest.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\drop\infrastructure\persistence\DeliveryRepository.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\recycler\application\RecyclerRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\infrastructure\persistence\RouteRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\infrastructure\persistence\ClientRepositoryAdapter.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\application\RouteRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\location\domain\Location.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\user\application\ClientRestPort.java
+C:\Users\ASUS_I7\Desktop\Trabajo de campo\Proyecto final V2\ecoclickv2\src\main\java\com\uptctrabajocampo\ecoclickv2\route\application\RouteLocationService.java

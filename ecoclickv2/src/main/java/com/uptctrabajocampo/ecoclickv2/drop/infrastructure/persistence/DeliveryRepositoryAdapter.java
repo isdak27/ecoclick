@@ -85,11 +85,6 @@ public class DeliveryRepositoryAdapter implements DeliveryPort {
     }
 
     @Override
-    public Delivery getDeliveryRues(String rues) {
-        return deliveryRepository.findByRues(rues).orElse(null);
-    }
-
-    @Override
     public Delivery getDeliveryById(int deliveryId) {
         return deliveryRepository.findById(deliveryId).orElse(null);
     }
@@ -99,13 +94,4 @@ public class DeliveryRepositoryAdapter implements DeliveryPort {
         return deliveryRepository.findByFeedback(feedback).orElse(null);
     }
 
-    @Override
-    public Delivery getDeliveryByEnvironmentalLicense(String environmentalLicense) {
-        return deliveryRepository.findByEnvironmentalLicense(environmentalLicense).orElse(null);
-    }
-
-    @Override
-    public Delivery getDeliveryByBusinessName(String businessName) {
-        return deliveryRepository.findByBusinessName(businessName).orElse(null);
-    }
 }

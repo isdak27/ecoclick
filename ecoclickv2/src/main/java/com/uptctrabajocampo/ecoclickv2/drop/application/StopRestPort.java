@@ -21,6 +21,4 @@ public interface StopRestPort {
   ResponseEntity<MessageRest<Void>> updateStopStatus(int stopId,String status);
   ResponseEntity<MessageRest<Void>> updateStopRating(int stopId,int rating);
   ResponseEntity<MessageRest<Void>> updateStopDetails(int stopId,String stopDetails);
-  ResponseEntity<MessageRest<Stop>> getOrganizationRues(String rues);
-  ResponseEntity<MessageRest<Stop>> getOrganizationById(int stopId);
 }

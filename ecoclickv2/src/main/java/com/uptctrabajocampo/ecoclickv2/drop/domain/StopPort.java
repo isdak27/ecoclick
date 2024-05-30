@@ -18,6 +18,4 @@ public interface StopPort {
   void updateStopStatus(int stopId,String status);
   void updateStopRating(int stopId,int rating);
   void updateStopDetails(int stopId,String stopDetails);
-  Stop getOrganizationRues(String rues);
-  Stop getOrganizationById(int stopId);
 }

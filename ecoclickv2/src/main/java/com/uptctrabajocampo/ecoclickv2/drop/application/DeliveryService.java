@@ -136,23 +136,6 @@ public class DeliveryService implements DeliveryRestPort {
     }
 
     @Override
-    public ResponseEntity<MessageRest<Delivery>> getDeliveryRues(String rues) {
-        if (rues == null || rues.isEmpty()) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Invalid RUES", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
-        }
-        try {
-            Delivery delivery = deliveryPort.getDeliveryRues(rues);
-            if (delivery != null) {
-                return new ResponseEntity<>(new MessageRest<>(1, "Success", HttpStatus.OK.value(), delivery), HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Delivery Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
-        } catch (Exception e) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    @Override
     public ResponseEntity<MessageRest<Delivery>> getDeliveryById(int deliveryId) {
         if (deliveryId <= 0) {
             return new ResponseEntity<>(new MessageRest<>(0, "Invalid Delivery ID", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
@@ -186,37 +169,4 @@ public class DeliveryService implements DeliveryRestPort {
         }
     }
 
-    @Override
-    public ResponseEntity<MessageRest<Delivery>> getDeliveryByEnvironmentalLicense(String feedback) {
-        if (feedback == null || feedback.isEmpty()) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Invalid Feedback", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
-        }
-        try {
-            Delivery delivery = deliveryPort.getDeliveryByEnvironmentalLicense(feedback);
-            if (delivery != null) {
-                return new ResponseEntity<>(new MessageRest<>(1, "Success", HttpStatus.OK.value(), delivery), HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Delivery Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
-        } catch (Exception e) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    @Override
-    public ResponseEntity<MessageRest<Delivery>> getDeliveryByBusinessName(String businessName) {
-        if (businessName == null || businessName.isEmpty()) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Invalid Business Name", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
-        }
-        try {
-            Delivery delivery = deliveryPort.getDeliveryByBusinessName(businessName);
-            if (delivery != null) {
-                return new ResponseEntity<>(new MessageRest<>(1, "Success", HttpStatus.OK.value(), delivery), HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(new MessageRest<>(0, "Delivery Not Found", HttpStatus.NOT_FOUND.value(), null), HttpStatus.NOT_FOUND);
-            }
-        } catch (Exception e) {
-            return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
 }

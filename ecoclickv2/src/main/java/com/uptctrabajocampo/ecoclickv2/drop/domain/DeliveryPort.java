@@ -13,9 +13,7 @@ public interface DeliveryPort {
   void updateDeliverystatus(int deliveryId,String status);
   void updateDeliveryRating(int deliveryId,int rating);
   void updateDeliveryfeedback(int deliveryId,String feedback);
-  Delivery getDeliveryRues(String rues);
   Delivery getDeliveryById(int deliveryId);
   Delivery getDeliveryByfeedback(String feedback);
-  Delivery getDeliveryByEnvironmentalLicense(String feedback);
-  Delivery getDeliveryByBusinessName(String businessName);
+
 }
