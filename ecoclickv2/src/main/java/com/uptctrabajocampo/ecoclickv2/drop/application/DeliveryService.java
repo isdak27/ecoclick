@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.uptctrabajocampo.ecoclickv2.drop.domain.Delivery;
 import com.uptctrabajocampo.ecoclickv2.drop.domain.DeliveryPort;
 import com.uptctrabajocampo.ecoclickv2.exception.MessageRest;
+import com.uptctrabajocampo.ecoclickv2.recycler.domain.Recycler;
 
 @Service
 public class DeliveryService implements DeliveryRestPort {
@@ -33,9 +34,9 @@ public class DeliveryService implements DeliveryRestPort {
     }
 
     @Override
-    public ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveryByRecycler() {
+    public ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveryByRecycler(Recycler recycler) {
         try {
-            List<Delivery> deliveries = deliveryPort.getAllDeliveryByRecycler();
+            List<Delivery> deliveries = deliveryPort.getAllDeliveryByRecycler(recycler);
             return new ResponseEntity<>(new MessageRest<>(1, "Success", HttpStatus.OK.value(), deliveries), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(new MessageRest<>(0, "Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR.value(), null), HttpStatus.INTERNAL_SERVER_ERROR);

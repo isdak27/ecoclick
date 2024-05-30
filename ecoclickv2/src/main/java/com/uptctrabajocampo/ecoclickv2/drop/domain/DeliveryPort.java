@@ -3,10 +3,13 @@ package com.uptctrabajocampo.ecoclickv2.drop.domain;
 import java.util.Date;
 import java.util.List;
 
+import com.uptctrabajocampo.ecoclickv2.recycler.domain.Recycler;
+
+
 
 public interface DeliveryPort {
   List<Delivery> getAllDelivery();
-  List<Delivery> getAllDeliveryByRecycler();
+  List<Delivery> getAllDeliveryByRecycler(Recycler recycler);
   List<Delivery> getAllDeliveryByexecutionDate( Date executionDate);
   Delivery createDelivery(Delivery delivery);
   void updateDelivery(Delivery delivery);

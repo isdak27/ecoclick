@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import com.uptctrabajocampo.ecoclickv2.drop.domain.Delivery;
 import com.uptctrabajocampo.ecoclickv2.drop.domain.DeliveryPort;
 import com.uptctrabajocampo.ecoclickv2.exception.ObjectNotFoundException;
+import com.uptctrabajocampo.ecoclickv2.recycler.domain.Recycler;
 
 @Component
 public class DeliveryRepositoryAdapter implements DeliveryPort {
@@ -25,8 +26,8 @@ public class DeliveryRepositoryAdapter implements DeliveryPort {
     }
 
     @Override
-    public List<Delivery> getAllDeliveryByRecycler() {
-        return List.of();
+    public List<Delivery> getAllDeliveryByRecycler(Recycler recycler) {
+        return deliveryRepository.findAllByAssignedRecycler(recycler);
     }
 
     @Override

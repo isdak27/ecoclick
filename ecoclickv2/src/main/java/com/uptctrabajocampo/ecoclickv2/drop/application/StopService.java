@@ -74,7 +74,7 @@ public class StopService implements StopRestPort {
     }
 
     @Override
-    public ResponseEntity<MessageRest<List<Stop>>> getAllStopByAssociatedJourney(Request associatedRequest) {
+    public ResponseEntity<MessageRest<List<Stop>>> getAllStopByAssociatedRequest(Request associatedRequest) {
         if (associatedRequest == null || associatedRequest.getRequestId() <= 0) {
             return new ResponseEntity<>(new MessageRest<>(0, "Invalid Request", HttpStatus.BAD_REQUEST.value(), null), HttpStatus.BAD_REQUEST);
         }

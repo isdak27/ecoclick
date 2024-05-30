@@ -7,10 +7,11 @@ import org.springframework.http.ResponseEntity;
 
 import com.uptctrabajocampo.ecoclickv2.drop.domain.Delivery;
 import com.uptctrabajocampo.ecoclickv2.exception.MessageRest;
+import com.uptctrabajocampo.ecoclickv2.recycler.domain.Recycler;
 
 public interface DeliveryRestPort {
   ResponseEntity<MessageRest<List<Delivery>>> getAllDelivery();
-  ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveryByRecycler();
+  ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveryByRecycler(Recycler recycler);
   ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveryByexecutionDate( Date executionDate);
   ResponseEntity<MessageRest<Delivery>> createDelivery(Delivery delivery);
   ResponseEntity<MessageRest<Void>> updateDelivery(Delivery delivery);

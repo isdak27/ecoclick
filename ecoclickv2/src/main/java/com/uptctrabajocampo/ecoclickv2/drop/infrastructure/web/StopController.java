@@ -55,7 +55,7 @@ public class StopController {
 
     @GetMapping("/findByRequest")
     public ResponseEntity<MessageRest<List<Stop>>> getAllStopsByRequest(@RequestBody Request associatedRequest) {
-        return stopService.getAllStopByAssociatedJourney(associatedRequest);
+        return stopService.getAllStopByAssociatedRequest(associatedRequest);
     }
 
     @PostMapping("/create")

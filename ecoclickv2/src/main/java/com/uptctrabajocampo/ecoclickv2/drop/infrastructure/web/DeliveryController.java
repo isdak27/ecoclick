@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.uptctrabajocampo.ecoclickv2.drop.application.DeliveryService;
 import com.uptctrabajocampo.ecoclickv2.drop.domain.Delivery;
 import com.uptctrabajocampo.ecoclickv2.exception.MessageRest;
+import com.uptctrabajocampo.ecoclickv2.recycler.domain.Recycler;
 
 @Controller
 @RestController
@@ -37,8 +38,8 @@ public class DeliveryController {
     }
 
     @GetMapping("/findByRecycler")
-    public ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveriesByRecycler() {
-        return deliveryService.getAllDeliveryByRecycler();
+    public ResponseEntity<MessageRest<List<Delivery>>> getAllDeliveriesByRecycler(@RequestBody Recycler recycler) {
+        return deliveryService.getAllDeliveryByRecycler(recycler);
     }
 
     @GetMapping("/findByExecutionDate")

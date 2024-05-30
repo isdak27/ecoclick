@@ -15,7 +15,7 @@ public interface StopRestPort {
   ResponseEntity<MessageRest<List<Stop>>> getAllStopByDate(Date executionDate);
   ResponseEntity<MessageRest<List<Stop>>> getAllStopByStatus(String status);
   ResponseEntity<MessageRest<List<Stop>>> getAllStopByAssociatedJourney(Journey associatedJourney);
-  ResponseEntity<MessageRest<List<Stop>>> getAllStopByAssociatedJourney(Request associatedRequest);
+  ResponseEntity<MessageRest<List<Stop>>> getAllStopByAssociatedRequest(Request associatedRequest);
   ResponseEntity<MessageRest<Stop>> createStop(Stop stop);
   ResponseEntity<MessageRest<Void>> updateStop(Stop stop);
   ResponseEntity<MessageRest<Void>> updateStopStatus(int stopId,String status);
